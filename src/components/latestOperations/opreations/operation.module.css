@@ -1,0 +1,42 @@
+.container{
+    background-color: #1c273b;
+    border-radius: 10px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.trashoff{
+    width: 0%;
+    height: 0px; 
+    transition: all 2500ms linear;
+    display: none;
+}
+.trash{
+background-color: yellow;
+width: 8%;
+height: 30px;
+margin-right: 2%;
+border-radius: 5px;
+cursor: pointer;
+transition: all 2500ms linear;
+}
+.data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    font-size: small;
+}
+.data img {
+width: 50px;
+height: 50px;
+border-radius: 10px;
+margin-left: 2%;
+margin-right: 10%;
+}
+.cost{
+    margin-right: 10%;
+    width: 8%;
+}

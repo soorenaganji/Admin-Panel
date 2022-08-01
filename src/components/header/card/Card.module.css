@@ -1,0 +1,21 @@
+.pic{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    margin-right: 20%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    background-color: rgba(82, 82, 135, 0.574);
+    height: 40px;
+    margin-right: 10%;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.name{
+    font-size: small;
+    text-align: center;
+}
