@@ -22,7 +22,7 @@
 }
 .all{
     width: 55%;
-    height: 7px;
+    height: 5px;
     background-color: rgba(76, 76, 76, 0.787);
     border-radius: 20px;
     margin-right: 5%;
@@ -33,7 +33,7 @@
 }
 .main{
     width: 80%;
-    height: 7px;
+    height: 5px;
     background-color: rgb(255, 230, 0);
     border-radius: 20px;
 }

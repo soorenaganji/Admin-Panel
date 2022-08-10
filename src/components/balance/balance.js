@@ -16,7 +16,7 @@ export default class balance extends Component {
          <p className={styles.p} >Current balance :</p>
         <img src={arrow} className={styles.arrow} />
           <p className={styles.balance} >{balance}$</p>
-          <button>New</button>
+          <button className={styles.btn} >New</button>
         </div>
     </>
     )

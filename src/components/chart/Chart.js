@@ -1,14 +1,15 @@
-import React from 'react'
-import chart from './line.png'
+import React , {Component} from 'react'
 import styles from './Chart.module.css'
- const Chart = () => {
+class Chart extends Component {
+  render () {
   return (
     <>
-    <div className={styles.container} >
-    <div className={styles.header} > <p className={styles.title} >Activity</p> <p className={styles.more} >...</p> </div>
-    <div className={styles.main} >Nothing to see here yet</div>
+    <div className={this.props.number === 2 ? styles.container2 : styles.container} >
+    <div className={this.props.number === 2 ? styles.header2 : styles.header} > <p className={styles.title} >Activity</p> <p className={styles.more} >...</p> </div>
+    <div className={this.props.number === 2 ? styles.main2 : styles.main} >Nothing to see here yet</div>
     </div>
     </>
   )
+}
 }
 export default Chart

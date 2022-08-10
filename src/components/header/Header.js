@@ -10,7 +10,10 @@ export default class Header extends Component {
         <div className={styles.container} >
             <ul>
                 <li className={styles.nav} >OverView</li>
-                <li className={styles.nav}></li>
+                <label className={styles.switch}>
+               <input type='checkbox' />
+               <span className={styles.slider}></span>
+             </label>
             </ul>
             <ul className={styles.main} >
                 <li className={styles.nav2} ><img src={settingsIcon} className={styles.icon} /></li>

@@ -1,6 +1,6 @@
-.container , .container ul{
+.container{
     display: flex;
-    height: 100vh;
+    height: 130vh;
     width: 15%;
     align-items: center;
     justify-content: center;
@@ -11,38 +11,56 @@
     z-index: 0;
     border-radius: 0px 0px 10px 10px;
 }
-.container ul{
+.main{
     width: 100%;
     background: none;
+    margin-right: 10%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    position: relative;
+    top: -5%;
+    right: 4%;
 }
 .item{
     margin-bottom: 0vh;
     font-size: medium;
     text-align: justify;
-    padding: 18px;
+    padding: 10px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
     transition: all 300ms linear;
     color: white;
+    margin: 5% 0%;
 }
 .logo{
     width: 100%;
-    height: 70px;
-    margin-top: -7vh;
-    margin-bottom: 5vh;
-
+    height: 80px;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    
 }
 .first{
     margin-top: 0vh;
     margin-bottom: 0vh;
 }
-.container ul li {
-width: 70%;
-margin-right: 30%;
+.main li {
+width: 84%;
+margin-right: 0%;
+
 }
 .item:hover{
-padding: 20px;
+padding: 15px;
 color: #ffee00;
+}
+.item:hover img{
+    filter: grayscale(0);
+    background-color: #15223c;
 }
 .item:active{
     color: #15223c;
@@ -52,9 +70,111 @@ color: #ffee00;
     width: 20px;
     height: 20px;
     margin-right: 7px;
-    background-color: #15223c;
     padding: 5px;
     border-radius: 3px;
     position: relative;
     top: 8px;
+    filter: grayscale(2);
+    transition: all 300ms linear;
 }
+.download{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    height: 20%;
+    position: relative;
+    bottom: 6%;
+}
+.descriptionOne{
+color: white;
+text-align: left;
+}
+.descriptionTwo{
+    font-size: small;
+    color: rgba(128, 128, 128, 0.69);
+}
+.buttonDownload {
+    bottom: 0%;
+    left: 0%;
+    display: inline-block;
+    position: relative;
+    padding: 10px 25px;
+    background-color: rgb(255, 200, 0);
+    color: black;
+    font-family: "Poppins" , sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-indent: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all linear 300ms;
+   }
+   
+.buttonDownload:hover {
+    background-color: #5ed427;
+    color: white;
+   }
+   
+   .buttonDownload:before, .buttonDownload:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+   }
+   
+   .buttonDownload:before {
+    width: 10px;
+    height: 2px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+   }
+   
+   .buttonDownload:after {
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+    animation: downloadArrow 1s linear infinite;
+    animation-play-state: paused;
+   }
+   
+   .buttonDownload:hover:before {
+    border-color: #cdefbd;
+   }
+   
+   .buttonDownload:hover:after {
+    border-top-color: #cdefbd;
+    animation-play-state: running;
+   }
+   
+   @keyframes downloadArrow {
+    0% {
+     margin-top: -7px;
+     opacity: 1;
+    }
+   
+    0.001% {
+     margin-top: -15px;
+     opacity: 0.4;
+    }
+   
+    50% {
+     opacity: 1;
+    }
+   
+    100% {
+     margin-top: 0;
+     opacity: 0.4;
+    }
+   }

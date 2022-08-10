@@ -6,6 +6,7 @@ import Balance from './components/balance/balance'
 import LatestOperation from './components/latestOperations/LatestOperation'
 import Chart from './components/chart/Chart'
 import HowMuch from './components/HowMuch/HowMuch'
+import Chart2 from './components/chart/Chart2'
 export default class App extends Component {
   render() {
     return (
@@ -16,8 +17,10 @@ export default class App extends Component {
            <div className={styles.cont} >
             <Balance/>
             <LatestOperation/>
-             <Chart/>
+             <Chart number="" />
           <HowMuch/>
+          <Chart number={2} />
+          <Chart2 />
            </div>
       </div>
     </>

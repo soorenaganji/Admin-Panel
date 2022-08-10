@@ -15,7 +15,7 @@ export default class
     return (
     <>
        <div className={styles.container} >
-           <ul>
+           <ul className={styles.main} >
            <li className={styles.first}><img src={logo} className={styles.logo} /></li>
             <li className={styles.item}><img src={feed} /> Dashboard</li>
             <li className={styles.item}><img src={chart} />Charts</li>
@@ -27,6 +27,11 @@ export default class
             <li className={styles.item}><img src={neww} />Project</li>
             {/* <li className={styles.item}><input type={"radio"}/><input type={"radio"} /></li> */}
            </ul>
+            <div className={styles.download} >
+              <p className={styles.descriptionOne} >PDF Report</p>
+              <p className={styles.descriptionTwo} >Download monthly report</p>
+              <button className={styles.buttonDownload} >Download</button>
+             </div>
        </div>
     </>
     )
