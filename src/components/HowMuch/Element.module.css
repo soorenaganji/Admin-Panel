@@ -1,0 +1,39 @@
+.img{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    background-color: rgb(14, 14, 14);
+    border-radius: 100px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.container{
+    background-color: rgba(26, 31, 50, 0.788);
+    width: 48%;
+    height: 30%;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.name{
+    font-size: x-small;
+}
+.all{
+    width: 55%;
+    height: 7px;
+    background-color: rgba(76, 76, 76, 0.787);
+    border-radius: 20px;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.main{
+    width: 80%;
+    height: 7px;
+    background-color: rgb(255, 230, 0);
+    border-radius: 20px;
+}

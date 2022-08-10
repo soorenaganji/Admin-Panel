@@ -5,6 +5,7 @@ import Tasks from './components/tasks/Tasks'
 import Balance from './components/balance/balance'
 import LatestOperation from './components/latestOperations/LatestOperation'
 import Chart from './components/chart/Chart'
+import HowMuch from './components/HowMuch/HowMuch'
 export default class App extends Component {
   render() {
     return (
@@ -16,6 +17,7 @@ export default class App extends Component {
             <Balance/>
             <LatestOperation/>
              <Chart/>
+          <HowMuch/>
            </div>
       </div>
     </>

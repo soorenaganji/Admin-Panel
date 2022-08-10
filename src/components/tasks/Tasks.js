@@ -25,6 +25,7 @@ export default class
             <li className={styles.item}><img src={user} />User Profile</li>
             <li className={styles.item}><img src={sticker} />Sale CRM</li>
             <li className={styles.item}><img src={neww} />Project</li>
+            {/* <li className={styles.item}><input type={"radio"}/><input type={"radio"} /></li> */}
            </ul>
        </div>
     </>

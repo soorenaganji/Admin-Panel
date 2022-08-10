@@ -1,0 +1,15 @@
+.container{
+width: 50%;
+height: 30%;
+position: relative;
+bottom: 91%;
+left: 45%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+}
+.element{
+    width: 50%;
+    height: 40%;
+}
