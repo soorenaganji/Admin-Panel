@@ -9,10 +9,10 @@ export default function HowMuch() {
   return (
     <>
      <div className={styles.container} >
-      <Element className={styles.element} src={first}  name={"People"}  />
-      <Element className={styles.element} src={second} name={"Trade"} />
-      <Element className={styles.element} src={third}  name={"Reports"} />
-      <Element className={styles.element} src={fourth} name={"Exchange"} />
+      <Element className={styles.element} src={first}  name={"People"}  precent={"thirtythree"} />
+      <Element className={styles.element} src={second} name={"Trade"}  precent={"thirtynine"} />
+      <Element className={styles.element} src={third}  name={"Reports"}  precent={"sixty"} />
+      <Element className={styles.element} src={fourth} name={"Exchange"}  precent={"ten"} />
      </div>
     </>
   )

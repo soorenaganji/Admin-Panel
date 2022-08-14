@@ -10,6 +10,7 @@
     justify-content: space-evenly;
     width: 90%;
     background-color: rgba(82, 82, 135, 0.574);
+    transition: all 300ms linear;
     height: 40px;
     margin-right: 10%;
     border-radius: 7px;
@@ -18,4 +19,8 @@
 .name{
     font-size: small;
     text-align: center;
+}
+.container:hover{
+    background-color: rgb(57, 255, 87);
+    color: black;
 }

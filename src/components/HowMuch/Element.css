@@ -7,7 +7,7 @@
     margin-top: 2%;
     margin-left: 2%;
 }
-.container{
+.containeer{
     background-color: rgba(26, 31, 50, 0.788);
     width: 48%;
     height: 30%;
@@ -23,7 +23,7 @@
 .all{
     width: 55%;
     height: 5px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.81);
     border-radius: 20px;
     margin-right: 5%;
     display: flex;
@@ -34,6 +34,18 @@
 .main{
     width: 80%;
     height: 5px;
-    background-color: rgb(81, 75, 255);
+    background-color: rgb(14, 230, 28);
     border-radius: 20px;
+}
+.ten{
+    width: 20%;
+    background-color: red;
+}
+.sixty{
+    width: 60%;
+    background-color: rgb(81, 75, 255);
+}
+.thirtynine{
+    width: 39%;
+    background-color: rgb(241, 241, 55);
 }

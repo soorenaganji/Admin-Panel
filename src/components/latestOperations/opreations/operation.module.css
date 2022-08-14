@@ -12,13 +12,15 @@
     height: 0px; 
     transition: all 2500ms linear;
     display: none;
+    opacity: 0;
 }
 .trash{
 background-color: yellow;
-width: 8%;
-height: 30px;
+width: 6.5%;
+height: 20px;
 margin-right: 2%;
 border-radius: 5px;
+padding: 5px;
 cursor: pointer;
 transition: all 2500ms linear;
 }
