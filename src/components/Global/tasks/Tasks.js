@@ -9,6 +9,7 @@ import bank from './home-alt2.svg'
 import sticker from './sticker.svg'
 import user from './user.svg'
 import calendar from './calendar.svg'
+import { Link } from 'react-router-dom'
 export default class 
  extends Component {
   render() {
@@ -17,15 +18,14 @@ export default class
        <div className={styles.container} >
            <ul className={styles.main} >
            <li className={styles.first}><img src={logo} className={styles.logo} /></li>
-            <li className={styles.item}><img src={feed} /> Dashboard</li>
-            <li className={styles.item}><img src={chart} />Charts</li>
-            <li className={styles.item}><img src={bank} />Bank</li>
-            <li className={styles.item}><img src={box} />Crypto</li>
-            <li className={styles.item}><img src={calendar} />Calendar</li>
-            <li className={styles.item}><img src={user} />User Profile</li>
-            <li className={styles.item}><img src={sticker} />Sale CRM</li>
-            <li className={styles.item}><img src={neww} />Project</li>
-            {/* <li className={styles.item}><input type={"radio"}/><input type={"radio"} /></li> */}
+            <li className={styles.item}><Link to={"/"} ><img src={feed} /> Dashboard</Link></li>
+            <li className={styles.item}><Link to={"/chart"} ><img src={chart} />Charts</Link></li>
+            <li className={styles.item}><Link to={"/bank"} ><img src={bank} />Bank</Link></li>
+            <li className={styles.item}><Link to={"/crypto"} ><img src={box} />Crypto</Link></li>
+            <li className={styles.item}><Link to={"/calendar"} ><img src={calendar} />Calendar</Link></li>
+            <li className={styles.item}><Link to={"/userprofile"} ><img src={user} />User Profile</Link></li>
+            <li className={styles.item}><Link to={"/salecrm"} ><img src={sticker} />Sale CRM</Link></li>
+            <li className={styles.item}><Link to={"/project"} ><img src={neww} />Project</Link></li>
            </ul>
             <div className={styles.download} >
               <p className={styles.descriptionOne} >PDF Report</p>

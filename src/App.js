@@ -1,27 +1,28 @@
 import React, { Component } from 'react'
 import styles from "./App.module.css"
-import Header from './components/header/Header'
-import Tasks from './components/tasks/Tasks'
-import Balance from './components/balance/balance'
-import LatestOperation from './components/latestOperations/LatestOperation'
-import Chart from './components/chart/Chart'
-import HowMuch from './components/HowMuch/HowMuch'
-import Chart2 from './components/chart/Chart2'
+import Dashboard from './components/Sections/Dashboard/Dashboard'
+import { Route } from 'react-router-dom'
+import Bank from "./components/Sections/Bank/Bank"
+import Crypto from './components/Sections/Crypto/Crypto'
+import Charts from './components/Sections/Charts/Charts'
+import Calendar from './components/Sections/calendar/Calendar'
+import UserProfile from './components/Sections/UserProfile/UserProfile'
+import Project from './components/Sections/Project/Project'
+import SaleCrm from './components/Sections/SaleCRM/SaleCrm'
 export default class App extends Component {
   render() {
     return (
     <>
       <div className={styles.container} >
-           <Header/>
-           <Tasks/>
-           <div className={styles.cont} >
-            <Balance/>
-            <LatestOperation/>
-             <Chart number="" />
-          <HowMuch/>
-          <Chart number={2} />
-          <Chart2 />
-           </div>
+      <div>
+       <Route exact path={"/"} component={Dashboard} />
+       <Route path={"/bank"} component={Bank} />  
+       <Route path={"/crypto"} component={Crypto} />  
+       <Route path={"/charts"} component={Charts} />  
+       <Route path={"/calendar"} component={Calendar} />  
+       <Route path={"/userprofile"} component={UserProfile} />
+       <Route path={"/project"} component={Project} />    
+      </div>  
       </div>
     </>
     )

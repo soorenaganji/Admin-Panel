@@ -178,3 +178,7 @@ text-align: left;
      opacity: 0.4;
     }
    }
+Link , a {
+    color: unset;
+    text-decoration: none;
+}
