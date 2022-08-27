@@ -3,8 +3,7 @@ import styles from "./Header.module.css"
 import Card from './card/Card'
 import settingsIcon from './settings.svg'
 import bell from './bell.svg'
-export default class Header extends Component {
-  render() {
+export default function Header () {
     return (
       <>
         <div className={styles.container} >
@@ -23,5 +22,4 @@ export default class Header extends Component {
         </div>
       </>
     )
-}
 }

@@ -10,16 +10,15 @@ import sticker from './sticker.svg'
 import user from './user.svg'
 import calendar from './calendar.svg'
 import { Link } from 'react-router-dom'
-export default class 
- extends Component {
-  render() {
+import Project from '../../Sections/Project/Project'
+export default function Tasks () {
     return (
     <>
        <div className={styles.container} >
            <ul className={styles.main} >
            <li className={styles.first}><img src={logo} className={styles.logo} /></li>
             <li className={styles.item}><Link to={"/"} ><img src={feed} /> Dashboard</Link></li>
-            <li className={styles.item}><Link to={"/chart"} ><img src={chart} />Charts</Link></li>
+            <li className={styles.item}><Link to={"/charts"} ><img src={chart} />Charts</Link></li>
             <li className={styles.item}><Link to={"/bank"} ><img src={bank} />Bank</Link></li>
             <li className={styles.item}><Link to={"/crypto"} ><img src={box} />Crypto</Link></li>
             <li className={styles.item}><Link to={"/calendar"} ><img src={calendar} />Calendar</Link></li>
@@ -36,4 +35,3 @@ export default class
     </>
     )
   }
-}

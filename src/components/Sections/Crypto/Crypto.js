@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-
-export default class Crypto extends Component {
-  render() {
+import React, { useState } from 'react'
+const Crypto = () => {
     return (
-      <div>Crypto</div>
+      <div>
+      
+      </div>
     )
   }
-}
+  export default Crypto

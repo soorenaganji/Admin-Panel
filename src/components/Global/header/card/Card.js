@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import styles from "./Card.module.css"
 import me from './me copy.jpg'
-export default class Card extends Component {
-  render() {
+export default function Card () {
     return (
       <div className={styles.container} >
      <img src={me} className={styles.pic} />
@@ -10,4 +9,3 @@ export default class Card extends Component {
       </div>
     )
   }
-}

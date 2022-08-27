@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 90%;
-    background-color: rgba(82, 82, 135, 0.574);
+    background-color: #52528792;
     transition: all 300ms linear;
     height: 40px;
     margin-right: 10%;
@@ -21,6 +21,6 @@
     text-align: center;
 }
 .container:hover{
-    background-color: rgb(255, 238, 6);
+    background-color: #ffee06;
     color: black;
 }

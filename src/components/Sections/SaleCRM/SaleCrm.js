@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+export default function SaleCrm () {
 
-export default class SaleCrm extends Component {
-  render() {
     return (
-      <div>SaleCrm</div>
+      <div>
+
+      </div>
     )
   }
-}
+

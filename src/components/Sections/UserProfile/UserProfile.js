@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-
-export default class UserProfile extends Component {
-  render() {
+export default function UserProfile () {
     return (
-      <div>UserProfile</div>
+      <>
+        
+      </>
     )
   }
-}
+

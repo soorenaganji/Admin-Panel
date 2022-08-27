@@ -5,7 +5,7 @@ import first from './people.svg'
 import second from './retweet.svg'
 import third from './clipboard.svg'
 import fourth from './swap-horizontal.svg'
-export default function HowMuch() {
+export default function HowMuch () {
   return (
     <>
      <div className={styles.container} >

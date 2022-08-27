@@ -1,16 +1,14 @@
 import React, { Component } from 'react'
 import "./Element.css"
-export default class Element extends Component {
-  render() {
-    const { precent } = this.props
+const  Element = (props) => {
     return (
       <>
       <div className={"containeer"} >
-        <img src={this.props.src} className={"img"} />
-        <p className={"name"} >{this.props.name}</p>
-        <div className={"all"} ><span className={"main " + precent}></span></div>
+        <img src={props.src} className={"img"} />
+        <p className={"name"} >{props.name}</p>
+        <div className={"all"} ><span className={"main " + props.precent}></span></div>
       </div>
       </>
     )
   }
-}
+  export default Element

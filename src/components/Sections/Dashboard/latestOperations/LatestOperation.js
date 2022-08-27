@@ -3,8 +3,7 @@ import styles from './LatestOperation.module.css'
 import Operation from './opreations/Operation'
 import visa from './visa-logo.webp'
 import mastercard from './mastercard-logo.png'
-export default class LatestOperation extends Component {
-  render() {
+const LatestOperation = () => {
     return (
     <>
     <div className={styles.container} >
@@ -23,4 +22,4 @@ export default class LatestOperation extends Component {
     </>
     )
   }
-}
+export default LatestOperation;

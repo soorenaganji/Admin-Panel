@@ -1,15 +1,8 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import styles from './balance.module.css'
 import arrow  from './arrow-right.svg'
-export default class balance extends Component {
-    constructor () {
-        super() ;
-        this.state = {
-            balance : 59700
-        }
-    }
-  render() {
-    const {balance} = this.state
+export default function Balance() {
+  const [balance , setBalance] = useState(59700)
     return (
     <>
         <div className={styles.container} >
@@ -21,4 +14,4 @@ export default class balance extends Component {
     </>
     )
   }
-}
+

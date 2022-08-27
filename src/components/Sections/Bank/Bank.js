@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 
-export default class Bank extends Component {
-  render() {
+const Bank = () => {
+
     return (
-      <div>Bank</div>
+      <div>
+        
+      </div>
     )
   }
-}
+export default Bank

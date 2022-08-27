@@ -9,11 +9,15 @@ import Calendar from './components/Sections/calendar/Calendar'
 import UserProfile from './components/Sections/UserProfile/UserProfile'
 import Project from './components/Sections/Project/Project'
 import SaleCrm from './components/Sections/SaleCRM/SaleCrm'
-export default class App extends Component {
-  render() {
-    return (
+import Header from './components/Global/header/Header'
+import Tasks from './components/Global/tasks/Tasks'
+export default function App () {
+
+    return(
     <>
       <div className={styles.container} >
+        <Header />
+        <Tasks/>
       <div>
        <Route exact path={"/"} component={Dashboard} />
        <Route path={"/bank"} component={Bank} />  
@@ -21,10 +25,10 @@ export default class App extends Component {
        <Route path={"/charts"} component={Charts} />  
        <Route path={"/calendar"} component={Calendar} />  
        <Route path={"/userprofile"} component={UserProfile} />
-       <Route path={"/project"} component={Project} />    
+       <Route path={"/project"} component={Project} /> 
+       <Route path={"/salecrm"} component={SaleCrm} />
       </div>  
       </div>
     </>
     )
   }
-}

@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import styles from './Chart2.module.css'
-export default class Chart2 extends Component {
-  render() {
+const Chart2 = () => {
+
     return (
     <>
       <div className={styles.container} >
@@ -11,4 +11,5 @@ export default class Chart2 extends Component {
     </>
     )
   }
-}
+
+  export default Chart2

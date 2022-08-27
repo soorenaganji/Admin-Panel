@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+const Calendar = () => {
 
-export default class Calendar extends Component {
-  render() {
     return (
-      <div>Calendar</div>
+      <div>
+
+      </div>
     )
   }
-}
+
+export default Calendar
