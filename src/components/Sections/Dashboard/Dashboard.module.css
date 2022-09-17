@@ -1,11 +1,11 @@
-.cont{
-    width: 85%;
-    height:93vh;
-    position: absolute;
-    bottom: 0vh;
-    left: 15%;
-    z-index: 9999999999;
-    color: white;
-    background-color: #0f0f15;
-    font-family: 'Poppins';
-  }
+.cont {
+  width: 85%;
+  height: 93vh;
+  position: absolute;
+  bottom: 0vh;
+  left: 15%;
+  z-index: 9999999999;
+  color: white;
+  background-color: #0f0f15;
+  font-family: "Poppins";
+}
